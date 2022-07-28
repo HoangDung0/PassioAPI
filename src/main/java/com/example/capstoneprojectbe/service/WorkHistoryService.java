@@ -53,9 +53,7 @@ public class WorkHistoryService {
 
         WorkHistory workHistory = new WorkHistory();
         workHistory.setWorkHistoryID(dto.getWorkHistoryID());
-//        workHistory.setStoreID(dto.getStoreID());
         workHistory.setStore(storeRepository.getById(dto.getStoreID()));
-//        workHistory.setUserID(dto.getUserID());
         workHistory.setUser(userRepository.getById(dto.getUserID()));
         workHistory.setDateIn(dto.getDateIn());
         workHistory.setDateOut(dto.getDateOut());
